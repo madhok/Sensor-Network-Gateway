@@ -1,0 +1,33 @@
+<resources>
+
+    <string name="app_name">Sensor Network Gateway</string>
+    <string name="button_start">Start</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main_screen">Welcome to Sensor Network Gateway</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_display_temperture">Display Overlay Parameters</string>
+    <string name="Temperature">Temperature</string>
+    <string name="Pressure">Pressure</string>
+    <string name="Light">Light</string>
+    <string name="Parameter1">Parameter1</string>
+    <string name="Parameter2">Parameter2</string>
+    <string name="Parameter3">Parameter3</string>
+    <string name="Back">Back</string>
+    <string name="Refresh">Refresh</string>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_temperature">TemperatureActivity</string>
+    <string name="title_activity_pressure">PressureActivity</string>
+    <string name="title_activity_light">LightActivity</string>
+    <string-array name="parameters_array">
+        <item>Temperature</item>
+        <item>Pressure</item>
+        <item>Light</item>
+        <item>Paramter1</item>
+        <item>Paramter2</item>
+        <item>Paramter3</item>
+    </string-array>
+</resources>
