@@ -1,7 +1,5 @@
 package com.sensorgateway;
 
-import java.io.Serializable;
-
 public class libCSV  
 {
 	public bldgdata [] datas;
