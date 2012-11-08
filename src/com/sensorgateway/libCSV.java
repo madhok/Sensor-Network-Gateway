@@ -22,6 +22,7 @@ public class libCSV
 			datas[row].centigrade = temp[i++].toString();	
 			datas[row].lux = temp[i++].toString();
 			datas[row].kPascals = temp[i++].toString();
+			
 		}
 		return true;
 	}	

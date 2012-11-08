@@ -58,6 +58,7 @@ public class MainScreen extends Activity {
     
     public void startOverlay(View view)
     {
+    	Room.roomCount = 0;
     	MyImageView imageview = new MyImageView(this);
     	LinearLayout  mainLayout= (LinearLayout)findViewById(R.id.linearLayout1);
     	RelativeLayout overLayout = (RelativeLayout) mainLayout.findViewById(R.id.Relativelayout1);
