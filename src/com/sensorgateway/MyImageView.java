@@ -11,14 +11,19 @@ import android.view.View;
 public class MyImageView extends View{
 
 	String csvFile = "27,Room114,0,60,40,50," +
-			 		 "29,Room116,2,75,90, 60," +
+					 "28,Room115,0,90,40,50," +
+			 		 "29,Room116,2,75,90,60," +
 					 "1,Room107,3,85,70,105," +
 					 "3,Room109,3,100,120,95," +
 				     "4,Room110,4,90,46,80," +
-				     "5,RoomW,5,80,96,85," +
+				     "5,RoomW,5,90,96,85," +
 				     "6,RoomStairs,6,65,136,100," +
 				     "7,RoomM,7,105,68,95," +
-				     "8,Room121,8,95,100,90";
+				     "8,Room121,8,95,100,90," +
+				     "9,RoomKitchen,7,105,68,95," +
+				     "10,Room118,7,95,68,95," +
+				     "11,Room117,7,45,68,95," +
+				     "12,Room117L,7,95,68,95,";
 
     public MyImageView(Context context) {
         super(context);
@@ -36,16 +41,17 @@ public class MyImageView extends View{
     		n++;
     	}
     	
-    	for (int i = 2; i <= Room.roomCount; i++)
+    	for (int i = 1; i <= Room.roomCount; i++)
 		{
 			path = new Path();
 			paint = new Paint();
-			path.moveTo(Room.Rooms[i-1].sensorPoint.x, Room.Rooms[i-1].sensorPoint.y);
-			paint.setStrokeWidth(10);
+			path.moveTo(Room.Rooms[i].sensorPoint.x1, Room.Rooms[i].sensorPoint.y1);
+			paint.setStrokeWidth(5);
 	        paint.setStyle(Paint.Style.STROKE);
 	        paint.setColor(Room.Rooms[i].temperature.color);
-			path.lineTo(Room.Rooms[i].sensorPoint.x, Room.Rooms[i].sensorPoint.y);
+			path.lineTo(Room.Rooms[i].sensorPoint.x2, Room.Rooms[i].sensorPoint.y2);
 			canvas.drawPath(path, paint);
+			
 		}      
         
        /* SensorPoints[] myPath = { Room.Room114,	Room.Room116, Room.Room107,
