@@ -1,9 +1,9 @@
 <resources>
 
-    <string name="app_name">Sensor Network Gateway</string>
+    <string name="app_name">Sensorium</string>
     <string name="button_start">Start</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main_screen">Welcome to Sensor Network Gateway</string>
+    <string name="title_activity_main_screen">Sensorium</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_display_temperture">Display Overlay Parameters</string>
     <string name="Temperature">Temperature</string>

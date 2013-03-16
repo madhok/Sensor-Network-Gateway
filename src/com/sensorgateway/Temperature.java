@@ -8,10 +8,10 @@ public class Temperature
 {
 	public LEVEL level;
 	public int color;
-	public int value;
+	public double value;
 	public Temperature(String strCentigrade)
 	{
-		 value = Integer.parseInt( strCentigrade );
+		 value = Double.parseDouble( strCentigrade );
 		 if(value <= 80)
 		 {
 			 level = LEVEL.LOW;

@@ -11,7 +11,14 @@ public class bldgdata
 	public String centigrade;
 	public String lux;
 	public String kPascals;
-	
+	public String id;
+	public String loc;
+	public String min;
+	public String max;
+	public String average_timestamp;
+	public String first;
+	public String last;
+	public String average;
 	
 }
 	/*case "Room111":

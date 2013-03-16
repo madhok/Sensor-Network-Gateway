@@ -1,5 +1,10 @@
 package com.sensorgateway;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.URL;
+
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -10,7 +15,9 @@ import android.view.View;
 
 public class MyImageView extends View{
 
-	String csvFile = "27,Room114,0,60,40,50," +
+	//String csvFile = "'foo':'bar','coolness':2.0, 'altitude':39000,'pilot':{'firstName':'Buzz','lastName':'Aldrin'},'mission':'apollo 11'";
+	
+	/*String csvFile = "27,Room114,0,60,40,50," +
 					 "28,Room115,0,90,40,50," +
 			 		 "29,Room116,2,75,90,60," +
 					 "1,Room107,3,85,70,105," +
@@ -24,9 +31,13 @@ public class MyImageView extends View{
 				     "10,Room118,7,95,68,95," +
 				     "11,Room117,7,45,68,95," +
 				     "12,Room117L,7,95,68,95,";
-
-    public MyImageView(Context context) {
+    
+	*/
+	
+	
+	public MyImageView(Context context) {
         super(context);
+        
     }
     
     @Override
@@ -34,7 +45,9 @@ public class MyImageView extends View{
     	int n = 0;
     	Path path = null;
 		Paint paint = null;
-    	DisplayAllActivity.objCSV.readCSV(csvFile);
+    	//DisplayAllActivity.objCSV.readCSV(csvFile);
+		
+    	DisplayAllActivity.objCSV.readValues();
     	while(DisplayAllActivity.objCSV.datas.length != n)
     	{
     		Room.CreateRoom(DisplayAllActivity.objCSV.datas[n]);

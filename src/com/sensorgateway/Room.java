@@ -28,9 +28,10 @@ public  class Room {
 	public static Room CreateRoom(bldgdata data)
 	{
 		Rooms[++roomCount] = new Room();
-		Rooms[roomCount].RoomName = data.name;
-		Rooms[roomCount].temperature = new Temperature(data.centigrade);
-		Rooms[roomCount].RoomID = Integer.parseInt(data.localityID);
+		Rooms[roomCount].RoomName = data.loc;
+		Rooms[roomCount].temperature = new Temperature(data.average);// centigrade
+		//Rooms[roomCount].RoomID = Integer.parseInt(data.localityID);
+		Rooms[roomCount].RoomID = 17; //Since its lobby// TBD
 		Rooms[roomCount].sensorPoint = Rooms[roomCount].getSensorPoints(Rooms[roomCount].RoomID);
 		return Rooms[roomCount];
 	}
